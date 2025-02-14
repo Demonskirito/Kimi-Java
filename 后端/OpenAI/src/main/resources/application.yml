@@ -1,0 +1,15 @@
+server:
+  web:
+    allowed-origins: "http://localhost:8080"
+  port: 8080  # 设置应用的端口号
+
+spring:
+  websocket:
+    # 如果需要设置特定的 WebSocket 配置
+    enabled: true
+
+logging:
+  level:
+    org.springframework.web.socket: DEBUG  # 启用 WebSocket 的日志级别（可选）
+    org.springframework: DEBUG
+    org.apache.ibatis: DEBUG
